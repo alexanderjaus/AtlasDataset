@@ -1,0 +1,133 @@
+Label, Name
+0,Background
+1,Left to annotate
+2,muscles
+3,fat
+4,abdominal tissue
+5,mediastinal tissue
+6,esophagus
+7,stomach
+8,small bowel
+9,duodenum
+10,colon
+11,rectum
+12,gallbladder
+13,liver
+14,pancreas
+15,kidney left
+16,kidney right
+17,bladder
+18,gonads
+19,prostate
+20,uterocervix
+21,uterus
+22,breast left
+23,breast right
+24,spinal canal
+25,brain
+26,spleen
+27,adrenal gland left
+28,adrenal gland right
+29,thyroid left
+30,thyroid right
+31,thymus
+32,gluteus maximus left
+33,gluteus maximus right
+34,gluteus medius left
+35,gluteus medius right
+36,gluteus minimus left
+37,gluteus minimus right
+38,iliopsoas left
+39,iliopsoas right
+40,autochthon left
+41,autochthon right
+42,skin
+43,vertebrae C1
+44,vertebrae C2
+45,vertebrae C3
+46,vertebrae C4
+47,vertebrae C5
+48,vertebrae C6
+49,vertebrae C7
+50,vertebrae T1
+51,vertebrae T2
+52,vertebrae T3
+53,vertebrae T4
+54,vertebrae T5
+55,vertebrae T6
+56,vertebrae T7
+57,vertebrae T8
+58,vertebrae T9
+59,vertebrae T10
+60,vertebrae T11
+61,vertebrae T12
+62,vertebrae L1
+63,vertebrae L2
+64,vertebrae L3
+65,vertebrae L4
+66,vertebrae L5
+67,costa 1 left
+68,costa 1 right
+69,costa 2 left
+70,costa 2 right
+71,costa 3 left
+72,costa 3 right
+73,costa 4 left
+74,costa 4 right
+75,costa 5 left
+76,costa 5 right
+77,costa 6 left
+78,costa 6 right
+79,costa 7 left
+80,costa 7 right
+81,costa 8 left
+82,costa 8 right
+83,costa 9 left
+84,costa 9 right
+85,costa 10 left
+86,costa 10 right
+87,costa 11 left
+88,costa 11 right
+89,costa 12 left
+90,costa 12 right
+91,rib_cartilage
+92,sternum
+93,clavicle left
+94,clavicle right
+95,scapula left
+96,scapula right
+97,humerus left
+98,humerus right
+99,skull
+100,hip left
+101,hip right
+102,sacrum
+103,femur left
+104,femur right
+105,heart   
+106,heart atrium left
+107,heart tissue
+108,heart atrium right
+109,heart myocardium
+110,heart ventricle left
+111,heart ventricle right
+112,iliac artery left
+113,iliac artery right
+114,aorta
+115,iliac vena left
+116,iliac vena right
+117,inferior vena cava
+118,portal vein and splenic vein
+119,celiac trunk
+120,lung lower lobe left
+121,lung upper lobe left
+122,lung lower lobe right
+123,lung middle lobe right
+124,lung upper lobe right
+125,bronchie
+126,trachea
+127,pulmonary artery
+128,cheek left
+129,cheek right
+130,eyeball left
+131,eyeball right

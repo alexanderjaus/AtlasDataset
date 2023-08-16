@@ -6,17 +6,18 @@
 
 <p align="center">
 <a href=https://arxiv.org/abs/2307.13375><img src="https://img.shields.io/badge/arxiv-2307.13375-orange?logo=arxiv&logoColor=white"/></a>
-<a href="https://drive.google.com/drive/folders/1WIlvpeKAWNS99sFprkGKtNZkHm-3agLf?usp=sharing"><img src="https://img.shields.io/badge/GDrive-Dataset-blue?logo=googledrive"/></a>
-<a href="https://drive.google.com/drive/folders/1WIlvpeKAWNS99sFprkGKtNZkHm-3agLf?usp=sharing"><img src="https://img.shields.io/badge/GDrive-Models-blue?logo=googledrive"/></a>
+<a href="https://drive.google.com/drive/folders/1WIlvpeKAWNS99sFprkGKtNZkHm-3agLf?usp=sharing"><img src="https://img.shields.io/badge/GDrive-Models_&_Dataset-blue?logo=googledrive"/></a>
+<a href="https://www.synapse.org/#!Synapse:syn52287632.1/datasets/"><img src="https://img.shields.io/badge/Synapse-Dataset-blue"/></a>
 </p>
 
 ## Introduction
-To tackle anatomical segmentation as a whole, we create the **DAP (Dense Anatomical Prediction) Atlas Dataset** which is constructed by aggregating multiple source datasets which only show subparts of the anatomy. These datasets are merged into a single full-body dataset by leveraging anatomical guidelines. 
+To tackle anatomical segmentation as a whole, we create the **DAP (Dense Anatomical Prediction) Atlas Dataset** which is constructed by aggregating multiple, fragmented source datasets which only show subparts of the anatomy. These datasets are merged into a single full-body dataset by leveraging anatomical guidelines. 
 
 ![Atlas_construction](figures/Atlas_construction.png)
 
 ## Atlas Dataset
-The Atlas Dataset makes use of the recently proposed [AutoPET](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=93258287) dataset and provides dense anatomical masks for 533 CTs of this dataset for 142 different anatomical structures, enabling the training of anatomical segmentation models for various downstream tasks.
+
+The Atlas Dataset utilizes the recently introduced [AutoPET](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=93258287) dataset and offers comprehensive anatomical masks for 533 CT scans from this dataset. These masks cover 142 distinct anatomical structures, facilitating the development of anatomical segmentation models for diverse downstream applications.
 
 ### Dataset Usage
 Download the provided [DAP Atlas annotation masks](https://drive.google.com/file/d/1ex0a9eQULLvKPDwijmijX2h49A-ockNy/view?usp=drive_link) and the [AutoPET CT images](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=93258287). The CTs and the Atlas masks can be uniquely matched via their file names.
@@ -34,7 +35,7 @@ The given name consists of the subject ID followed by the last 5 digits of the S
 
 
 ## Anatomical Prediction Models
-Our dataset generation approach relies on the training of a large amount of models which is why we rely on the [nnU-NetV1](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1).
+Our dataset generation approach relies on training numerous models, which is why we rely on the [nnU-NetV1](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1).
 
 Besides the dataset, we publish two anatomical models which are trained nnU-netsV1:
 - **The Atlas dataset model (V1):** This network was trained in the standard nnU-Net fashion and was used to generate the raw dataset which has to be post-processed.

@@ -50,7 +50,7 @@ Unless there exists a specific reason, we recommend the usage of the Atlas predi
 Follow the instructions to install the [nnU-Net**V1**](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1) version. Download our provided anatomical segmentation models, unpack them and move them to the `RESULTS` folder of the nnU-Net. Your data structure should look like this.
 
 ```text
-RESULTS_FOLDER/nnunet
+RESULTS_FOLDER/nnUNet
 ├── 2d
 ├── 3d_cascade_fullres
 ├── 3d_fullres

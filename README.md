@@ -87,6 +87,18 @@ nnUNet_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -t 902 -m 3d_fullres -chk model_
 nnUNet_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -t 901 -m 3d_fullres 
 ```
 `INPUT_FOLDER` denotes the directory which contains the CTs, and `OUTPUT_FOLDER` described the target directory to which the predictions will be written.
+
+#### Faster inference (CUDA, Apple MPS or CPU)
+`inference/predict_atlas.py` runs the same models with the same preprocessing, sliding window, fold averaging and export as `nnUNet_predict`, but keeps the sliding-window aggregation, the fold ensemble and the export resampling on the GPU, and also runs on Apple silicon (MPS). It uses the same folder convention and `RESULTS_FOLDER`:
+
+```python
+# Atlas prediction model (V2)
+python inference/predict_atlas.py -i INPUT_FOLDER -o OUTPUT_FOLDER -t 902
+
+# Atlas dataset model (V1); add --tta for nnUNet_predict's default mirroring (about 8x slower)
+python inference/predict_atlas.py -i INPUT_FOLDER -o OUTPUT_FOLDER -t 901
+```
+On CPU in fp32 (`--device cpu`) the output is bit-identical to `nnUNet_predict --disable_mixed_precision`. On a GPU it uses mixed precision like `nnUNet_predict`; `--disable_mixed_precision` gives fp32.
 ## Post Processing
 We provide the code to perform the described post-processing operations of the raw output model predictions to improve their quality by leveraging medical guidelines. The script can be started by using the following command:
 
